@@ -1,0 +1,27 @@
+{
+  "name": "projects_site",
+  "version": "1.0.0",
+  "description": "The projects page-let for the CosmicK9 projects website (https://projects.cosmick9.org).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha ./tests/checkNodeVersion.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cosmick9-org/projects"
+  },
+  "author": "Collin Atworth (collin@cosmick9.net)",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Cosmic-K9/projects_site/issues"
+  },
+  "homepage": "https://projects.cosmick9.net",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
