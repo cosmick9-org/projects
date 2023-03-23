@@ -1,27 +1,12 @@
-html
-    head
-        title= `Collin's Projects`
-        meta(charset="utf-8")
-        meta(name="viewport" content="width=device-width, initial-scale=1")
-        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD", crossorigin="anonymous")
-        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js", integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN", crossorigin="anonymous")
-        script(src="https://kit.fontawesome.com/263cc45962.js", crossorigin="anonymous")
-        script(src="https://code.jquery.com/jquery-3.6.0.min.js", integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=", crossorigin="anonymous")
-    // Make page dark themed
-    body.bg-dark.text-light
-        nav(class="navbar navbar-expand-lg container")
-            span.navbar-brand Collin's Projects
-            ul.navbar-nav
-                li.nav-item #[a.nav-link(href="/") Home]
-                li.nav-item #[a.nav-link(href="/projects") Projects]
-        div.container.bg-black.rounded.my-1.py-4
-            div.row
-                div.col
-                    h1= `Collin's Projects`
-                    span.lead
-                        | Welcome to my projects page-let! Here you can find a list of all my projects, and links to their GitHub repositories.
-                        | If you have any questions, feel free to contact me on the Fediverse at #[a(rel="me", class="text-decoration-none", href="https://bark.lgbt/@cosmick9") @cosmick9@bark.lgbt]
-        footer.py-2.text-center.rounded
-                img.px-1(src="https://raw.githubusercontent.com/openjs-foundation/artwork/main/projects/nodejs/nodejs-icon-color.png", title="This website uses NodeJS", alt="a NodeJS icon, indicating this website's use of NodeJS", width="5%", height="auto")
-                img.px-1(src="https://raw.githubusercontent.com/openjs-foundation/artwork/master/projects/express/express-hex-sticker.png", title="This website uses Express.JS", alt="an Express.JS icon, indicating this website's use of Express.JS", width="5%", height="auto")
-                img.px-1(src="https://cloud.githubusercontent.com/assets/6522912/14928851/47f86b5c-0e52-11e6-9e6b-4e89595c68f1.png", title="This website uses Pug.JS", alt="a Pug.JS icon, indicating this website's use of Pug.JS", width="5%", height="auto")
+extends layout.pug
+
+block head
+	title= "Home"
+
+block content
+	div.row
+		div.col
+			h1= title
+			span.lead
+				| Welcome to my projects page-let! Here you can find a list of all my projects, and links to their GitHub repositories.
+				| If you have any questions, feel free to contact me on the Fediverse at #[a(rel="me" class="text-decoration-none" href="https://bark.lgbt/@cosmick9") @cosmick9@bark.lgbt]

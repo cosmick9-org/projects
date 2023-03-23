@@ -105,3 +105,4 @@ dist
 
 # Development automation scripts
 dev_build.sh
+dev_test.sh
